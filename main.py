@@ -26,14 +26,6 @@ elegi=["QRESIDUOS_ALIMENTOS", "QRESIDUOS_PAPEL_MIXTO",
 columnas_validas=[]
 st.title("Composición de Residuos Sólidos Domiciliarios")
 st.write("---")
-st.subheader("Integrantes")
-integrantes = ["- Delsi Cueva Guerra", "- Harriet Mamani Mamani", "- Angelica Perez Poma", "- Francklin Dueñas Lagua"]
-col1, col2 = st.columns(2)
-col1.write(integrantes[0])
-col2.write(integrantes[1])
-col1.write(integrantes[2])
-col2.write(integrantes[3])
-st.write("---")
 
 data = pd.read_csv("Dcompos.csv", sep=";", encoding="latin1")
 data = data.set_index("N_SEC")
@@ -41,6 +33,14 @@ dfrepe = data.dropna(how='all')
 
 def mostrar_seccion(seccion):
     if seccion == "Inicio":
+        st.subheader("Integrantes")
+        integrantes = ["- Delsi Cueva Guerra", "- Harriet Mamani Mamani", "- Angelica Perez Poma", "- Francklin Dueñas Lagua"]
+        col1, col2 = st.columns(2)
+        col1.write(integrantes[0])
+        col2.write(integrantes[1])
+        col1.write(integrantes[2])
+        col2.write(integrantes[3])
+        st.write("---")
         with st.container():
             left_column, right_column = st.columns(2)
             with left_column:
