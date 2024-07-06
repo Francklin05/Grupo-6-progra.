@@ -55,6 +55,8 @@ def mostrar_seccion(seccion):
             with right_column:
                 imagen_url = 'imagen.png'  
                 st.image(imagen_url, use_column_width=True)
+        st.subheader("Descripcion")
+        st.write("El manejo de residuos sólidos es un desafío crítico para cualquier nación en vías de desarrollo, y el Perú no es una excepción. En los últimos años, el país ha experimentado un crecimiento económico y demográfico significativo, lo cual ha llevado a un aumento proporcional en la generación de residuos sólidos. Estos residuos, que abarcan desde desechos orgánicos y plásticos hasta materiales de construcción y electrónicos, representan un problema complejo que afecta tanto a las zonas urbanas como rurales del Perú.")
         st.write("----")
         st.write("A continuación se muestra la tabla general:")
         st.subheader("Tabla General")
