@@ -47,7 +47,9 @@ def mostrar_seccion(seccion):
                 st.header("Objetivo")
                 st.write(
                     """
-                    Información del proyecto, sus objetivos y la finalidad del mismo.
+                   Analizar la composición química y física de los residuos sólidos domiciliarios para 
+                   identificar los principales componentes orgánicos e inorgánicos, 
+                   con el fin de desarrollar estrategias efectivas de gestión y tratamiento
                     """
                 )
             with right_column:
